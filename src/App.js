@@ -15,7 +15,7 @@ function App() {
     };
     getCards();
   }, []);
-  console.log(cardItem);
+
   return (
     <div className="App">
       <Header />;

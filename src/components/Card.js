@@ -1,11 +1,13 @@
 import React from "react";
+import classes from "./Card.module.css";
 
 const Card = (props) => {
+  console.log(props.title);
   return (
-    <div>
-      <div>{props.cardInfo.title}</div>
-      <div>{props.cardInfo.body}</div>
-      <div>{props.cardInfo.category}</div>
+    <div className={classes.main}>
+      <div>{props.title}</div>
+      <div>{props.body}</div>
+      <div>{props.category}</div>
     </div>
   );
 };
